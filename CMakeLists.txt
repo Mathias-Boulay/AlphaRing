@@ -3,7 +3,7 @@ project(alpha_ring)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(VERSION "1.1955.0.0")
+set(VERSION "1.3385.0.0")
 
 set(WRAPPER_NAME "WTSAPI32")
 set(WRAPPER_DLL_NAME "${WRAPPER_NAME}.dll")
@@ -60,7 +60,7 @@ add_definitions(-D_SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS)
 add_definitions(-DIMGUI_DEFINE_MATH_OPERATORS)
 
 add_compile_definitions(WRAPPER_DLL_NAME="${WRAPPER_DLL_NAME}")
-add_compile_definitions(GAME_VERSION="${VERSION}")
+add_compile_definitions(GAME_VERSION="1.1955.0.0")
 
 file(GLOB_RECURSE CORE_SRC ${CMAKE_SOURCE_DIR}/src/*.cpp)
 
